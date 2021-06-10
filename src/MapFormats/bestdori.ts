@@ -29,7 +29,11 @@ type bdSingleNote = bdNoteBase & {
 
 type bdSlideNote = bdNoteBase & {
   type: "Slide"
-  connections: Array<bdSingleNote>
+  connections: {
+    beat: number
+    lane: number
+    flick?: true
+  }[]
 }
 
 type bdMapItem = bdBpm | bdSingleNote | bdSlideNote
@@ -192,8 +196,12 @@ export function toBestdoriFormat(map: EditMap) {
         if (!bdslides[sl.id]) bdslides[sl.id] = {
           type: "Slide", connections: []
         }
-        const bdn: bdSingleNote = {
-          type: "Single", beat, lane
+        const bdn: {
+          beat: number
+          lane: number
+          flick?: true
+        } = {
+          beat, lane
         }
         if (sl.notes[sl.notes.length - 1] === n.id && sl.flickend) bdn.flick = true
         bdslides[sl.id].connections.push(bdn)
