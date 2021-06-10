@@ -204,6 +204,14 @@ export function toBestdoriFormat(map: EditMap) {
         break
     }
   }
+  bdmap.sort((a, b) => {
+    const beatA = a.type === "Slide" ? a.connections[0].beat : a.beat
+    const beatB = b.type === "Slide" ? b.connections[0].beat : b.beat
+    if (a.type === "BPM" || b.type === "BPM" || beatA !== beatB) return beatA - beatB
+    const laneA = a.type === "Slide" ? a.connections[0].lane : a.lane
+    const laneB = b.type === "Slide" ? b.connections[0].lane : b.lane
+    return laneA - laneB
+  })
   return format(bdmap)
 }
 
