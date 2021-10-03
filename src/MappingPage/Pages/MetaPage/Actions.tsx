@@ -116,7 +116,7 @@ const uploadToAyaSonolus = async () => {
         const axios = require('axios');
         const fileObj = new FormData();
         fileObj.append('file', Music.musicfile as Blob);
-        let uploadMusicResult = (await axios.post('https://upload.ayachan.fun:24444/Sonolus', fileObj, {
+        let uploadMusicResult = (await axios.post('https://service-mdom0qq6-1300838857.gz.apigw.tencentcs.com/upload', fileObj, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
