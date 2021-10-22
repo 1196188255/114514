@@ -54,46 +54,6 @@ function format(map: bdMap) {
   return strb.join("")
 }
 
-function slideScope() {
-
-  let a: number | null = null
-  let abeat = 0
-  let b: number | null = null
-  let bbeat = 0
-
-  return {
-    start(id: number, beat: number) {
-      if (a === null && beat > abeat) {
-        a = id
-        return "A"
-      }
-      if (b === null && beat > bbeat) {
-        b = id
-        return "B"
-      }
-      throw new Error("Can not use 3 slides at same time")
-    },
-    mid(id: number) {
-      if (a === id) return "A"
-      if (b === id) return "B"
-      throw new Error("Map may be corrupted")
-    },
-    end(id: number, beat: number) {
-      if (a === id) {
-        a = null
-        abeat = beat
-        return "A"
-      }
-      if (b === id) {
-        b = null
-        bbeat = beat
-        return "B"
-      }
-      throw new Error("Map may be corrupted")
-    }
-  }
-}
-
 function properBpmForSpan(time: number, preferred: number) {
   for (let bpm = 30; bpm <= 60000; bpm++) {
     const beattime = 60 / bpm
