@@ -5,12 +5,14 @@ import MetaPage from "./Pages/MetaPage"
 import TimingPage from "./Pages/TimingPage"
 import SettingsPage from "./Pages/SettingsPage"
 import MappingPage from "./Pages/MappingPage"
+import ToolsPage from "./Pages/ToolsPage"
 
 const routes = {
   "#meta": MetaPage,
   "#timing": TimingPage,
   "#mapping": MappingPage,
   "#settings": SettingsPage,
+  "#tools": ToolsPage
 }
 export type RoutePath = keyof typeof routes
 

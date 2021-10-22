@@ -98,5 +98,11 @@
     "Test Tips of Aya Sonolus Server": "您可以通过以下所述的方法测试您的谱面：\r1、打开Sonolus（官网：https://sonolus.com）；\r2、进入测试服务器（地址：http://test.sonolus.ayachan.fun/bestdori）；\r3、找到ID为 {{id}} 的谱面进行测试。\r提示：这个测试ID（{{id}}）将会在约6个小时后过期，请您测试时注意时间。",
     "Can not have float point bpm": "不能使用小数BPM",
     "Map may be corrupted": "谱面可能已经损坏",
-    "Can not calculate bpm insertion": "无法计算BPM插值"
+    "Can not calculate bpm insertion": "无法计算BPM插值",
+    "Tools": "工具",
+    "BpmCalculator": "前黑计算器",
+    "BpmCalcTip": "此工具可以帮助您计算您需要于歌曲音频开头插入/删除空白的秒数。这样做主要是为了能让首个时间点与音频的节拍对齐。",
+    "BpmCalcResult": "可以向前方插入 {{insert}} 秒的空白，或删除最前方的 {{remove}} 秒。",
+    "BestdoriChartCheck": "Bestdori!谱面错误检查工具",
+    "Others": "其它"
 }

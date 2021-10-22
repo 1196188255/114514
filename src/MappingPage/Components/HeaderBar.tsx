@@ -32,6 +32,7 @@ const HeaderTabs = () => {
     "#meta": t("Meta"),
     "#timing": t("Timing"),
     "#mapping": t("Mapping"),
+    "#tools": t("Tools"),
     "#settings": t("Settings")
   }
 
