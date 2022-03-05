@@ -117,7 +117,7 @@ const Actions = () => {
             const axios = require('axios');
             const fileObj = new FormData();
             fileObj.append('file', Music.musicfile as Blob);
-            let uploadMusicResult = (await axios.post('https://service-mdom0qq6-1300838857.gz.apigw.tencentcs.com/upload', fileObj, {
+            let uploadMusicResult = (await axios.post('https://api.ayachan.fun/v2/sonolus/upload/song', fileObj, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
@@ -126,7 +126,7 @@ const Actions = () => {
             setUploadAyaTitle("Uploading chart")
             userMessage(i18n.t('Uploading chart'), 'info')
             let uploadChartResult =
-                (await axios.post('https://api.ayachan.fun/Sonolus/Upload', {
+                (await axios.post('https://api.ayachan.fun/v2/sonolus/upload/script', {
                     notes,
                     bgm: uploadMusicResult.filename,
                     title: scope.meta.name,
