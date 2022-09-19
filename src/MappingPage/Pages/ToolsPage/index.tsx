@@ -24,6 +24,11 @@ const ToolsPage = () => {
                     { t("BestdoriChartCheck") }
                 </Link>
             </Grid>
+            <Grid item xs={12}>
+                <Link target="_blank" rel="noopener noreferrer" href="https://qq1010903229.github.io/BanGConverter">
+                    { t("BanGConverter") }
+                </Link>
+            </Grid>
         </Grid>
 
     return (
