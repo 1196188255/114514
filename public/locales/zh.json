@@ -95,7 +95,7 @@
     "Test in BanG Player": "在BanG Player中进行测试",
     "Test Tips": "您可以通过以下所述的方法测试您的谱面：\r1、打开BanG Player v2（https://cn.bangplayer.live）；\r2、进入主界面后，点击“bangbangboom editor测试”按钮；\r3、在弹出的对话框中输入 {{id}} 后点击确认；\r4、加载完毕后点击“开始演出吧！”按钮。\r提示：这个测试ID（{{id}}）将会在约1个小时后过期，请您测试时注意时间。",
     "Test in Aya Sonolus Server": "在 @彩绫与6QHTSK 的Sonolus测试服务器中测试",
-    "Test Tips of Aya Sonolus Server": "您可以通过以下所述的方法测试您的谱面：\r1、打开Sonolus（官网：https://sonolus.com）；\r2、进入测试服务器（地址：http://test.sonolus.ayachan.fun/bestdori）；\r3、找到ID为 {{id}} 的谱面进行测试。\r提示：这个测试ID（{{id}}）将会在约6个小时后过期，请您测试时注意时间。",
+    "Test Tips of Aya Sonolus Server": "您可以通过以下所述的方法测试您的谱面：\r1、打开Sonolus（官网：https://sonolus.com）；\r2、进入测试服务器（地址：https://sonolus.ayachan.fun/test）；\r3、在首页或关卡列表找到 #{{id}} 的谱面进行测试。\r提示：\r1、谱面 #{{id}} 的过期时间为6个小时，请您注意时间；\r2、如需要设置谱面难度、谱面可见性、谱面测试时间，或需要测试带有SP键型等本站无法处理的谱面，请在“彩绫的工具站”（地址：https://ayachan.fun）上传测试；\r3、在使用本功能遇到任何问题请反馈@彩绫与6QHTSK。",
     "Can not have float point bpm": "不能使用小数BPM",
     "Map may be corrupted": "谱面可能已经损坏",
     "Can not calculate bpm insertion": "无法计算BPM插值",
